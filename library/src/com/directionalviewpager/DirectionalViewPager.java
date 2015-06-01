@@ -185,6 +185,10 @@ public class DirectionalViewPager extends ViewPager {
         mPopulatePending = false;
         setCurrentItemInternal(item, true, false);
     }
+    
+    public void getCurrentItem(){
+        return mCurItem;
+    }
 
     void setCurrentItemInternal(int item, boolean smoothScroll, boolean always) {
         if (mAdapter == null || mAdapter.getCount() <= 0) {
